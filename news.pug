@@ -1,0 +1,17 @@
+-
+  var news = [
+    {date:'2019.07.31',title:'挨拶'},
+    {date:'2019.08.01',title:'サイトリニューアルのお知らせ'},
+    {date:'2019.08.03',title:'夏のキャンペーンお知らせ　１'},
+    {date:'2019.08.04',title:'夏のキャンペーンお知らせ　２'},
+    {date:'2019.08.05',title:'夏のキャンペーンお知らせ　３'}
+  ]
+
+div.container-body
+  h2.news-title NEWS
+  ul.news
+    each item in news
+      li.news-item
+        a.news-link
+          span.news-date #{item['date']}
+          span.news-title #{item['title']}
